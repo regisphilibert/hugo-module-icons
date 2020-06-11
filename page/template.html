@@ -1,0 +1,7 @@
+{{ define "main" }}
+	{{ range resources.Match "hugo-icons/icons/*.svg" }}
+		<div style="fill:currentColor;width:3rem;margin:1rem 0">
+		  {{ .Content | safeHTML }}
+		</div>
+	{{ end }}
+{{ end }}

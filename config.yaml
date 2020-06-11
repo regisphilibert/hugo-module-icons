@@ -1,0 +1,14 @@
+module:
+	hugoVersion:
+	  min: '0.57.0'
+  mounts:
+    - source: page/index.md
+      target: content/hugo-icons-listing.md
+			lang: en
+		- source: page/template.html
+      target: layouts/_default/hugo-icons-listing.html
+  imports:
+    - path: github.com/twbs/icons
+      mounts:
+	    - source: icons
+        target: assets/hugo-icons/icons
