@@ -1,1 +1,3 @@
-An example module for URL
+# Example Module
+
+See https://www.thenewdynamic.com/article/hugo-modules
