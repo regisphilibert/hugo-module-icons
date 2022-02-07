@@ -11,6 +11,6 @@
   @example - Go Template
     {{ partial "hugo-icons/icon" "cart" }}
 */}}
-{{- with resources.Get (print "hugo-icons/icons/" .) -}}
+{{- with resources.Get (print "hugo-icons/icons/" . ".svg") -}}
   {{- .Content | safeHTML -}}
 {{- end -}}
